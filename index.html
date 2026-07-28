@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gemmy's Website</title>
+    <title>Gemmy's Portfolio</title>
     <style>
-      /* Style the whole page background and font */
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #74b9ff, #a29bfe);
-        height: 100vh;
+        background-color: #0f172a;
+        color: #e2e8f0;
         margin: 0;
+        padding: 40px 20px;
         display: flex;
         justify-content: center;
-        align-items: center;
       }
-
-      /* Create a nice content box */
+      .container {
+        max-width: 600px;
+        width: 100%;
+      }
       .card {
-        background-color: white;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        text-align: center;
-        max-width: 400px;
+        background-color: #1e293b;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
       }
-
-      /* Style the heading text */
       h1 {
-        color: #2d3436;
-        font-size: 24px;
-        margin-bottom: 10px;
+        color: #38bdf8;
+        margin-top: 0;
       }
-
-      /* Style the paragraph text */
+      h2 {
+        color: #f43f5e;
+        font-size: 20px;
+      }
       p {
-        color: #636e72;
-        font-size: 16px;
+        line-height: 1.6;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #38bdf8;
+        color: #0f172a;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      .btn:hover {
+        background-color: #0ea5e9;
+      }
+      .btn-youtube {
+        background-color: #ef4444;
+        color: white;
+      }
+      .btn-youtube:hover {
+        background-color: #dc2626;
       }
     </style>
   </head>
   <body>
-    <div class="card">
-      <h1>Hello World!</h1>
-      <p>Welcome to my website hosted on GitHub.</p>
+    <div class="container">
+      <div class="card">
+        <h1>hi, im gemmy.</h1>
+        <p>and welcome to my website! if you dont know me, i make games, play games, do whatever. if you want to see me stream, go on youtube and search gemmy. i might not pop up though so heres my channel: https://www.youtube.com/@geueummy</p>
+        <a class="btn" href="https://github.com/gemmyvr" target="_blank">View GitHub Profile</a>
+        <a class="btn btn-youtube" href="YOUR_YOUTUBE_LINK_HERE" target="_blank">Visit YouTube Channel</a>
+      </div>
+
+      <div class="card">
+        <h2>🎮 Games I'm Working On</h2>
+        <p><strong>Sector Simian:</strong> A brief description of the awesome game you are building. What's it about? What engine are you using?</p>
+        <p><strong>Game Title 2:</strong> Details about another project or feature you are experimenting with right now.</p>
+      </div>
     </div>
   </body>
 </html>
